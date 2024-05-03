@@ -1,0 +1,6 @@
+framework module Pods_MemoryGameApp {
+  umbrella header "Pods-MemoryGameApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
