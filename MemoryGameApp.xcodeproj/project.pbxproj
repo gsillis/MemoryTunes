@@ -26,6 +26,7 @@
 		C545C4962BE5079800036CEE /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4952BE5079800036CEE /* GameState.swift */; };
 		C545C49A2BE518B500036CEE /* MemoryGameLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4992BE518B500036CEE /* MemoryGameLogicTests.swift */; };
 		C545C49C2BE558BE00036CEE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C49B2BE558BE00036CEE /* AppState.swift */; };
+		C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C49D2BE55AF800036CEE /* AppReducer.swift */; };
 		D251B919C3FEFCFE5C5DC156 /* Pods_MemoryGameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D326C7C9DC3C72C2CB9BFE3 /* Pods_MemoryGameApp.framework */; };
 		FB16D389B5D0B50EC1FEF5C8 /* Pods_MemoryGameAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148A55418327CACCDB694C9 /* Pods_MemoryGameAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		C545C4952BE5079800036CEE /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		C545C4992BE518B500036CEE /* MemoryGameLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameLogicTests.swift; sourceTree = "<group>"; };
 		C545C49B2BE558BE00036CEE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C545C49D2BE55AF800036CEE /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		FA4B795BCC16EE8E76CFAA63 /* Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MemoryGameApp-MemoryGameAppUITests/Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				C545C4932BE5073100036CEE /* MemoryGameLogic.swift */,
+				C545C49D2BE55AF800036CEE /* AppReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -263,7 +266,6 @@
 				AD0F05B6759A09AC6551AFF9 /* Pods-MemoryGameAppTests.debug.xcconfig */,
 				169FA68C63A81FF8FE1C6ABE /* Pods-MemoryGameAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -512,6 +514,7 @@
 				C545C48B2BE2DE9E00036CEE /* SearchResult.swift in Sources */,
 				C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */,
 				C51BC6FE2BE0114400879721 /* AppDelegate.swift in Sources */,
+				C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */,
 				C51BC7002BE0114400879721 /* SceneDelegate.swift in Sources */,
 				C545C4942BE5073100036CEE /* MemoryGameLogic.swift in Sources */,
 				C51BC7352BE159B600879721 /* CardCollectionViewCell.swift in Sources */,
@@ -693,6 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WKN62NB674;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryGameApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -721,6 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WKN62NB674;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemoryGameApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

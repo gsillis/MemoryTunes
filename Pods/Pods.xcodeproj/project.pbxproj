@@ -88,10 +88,10 @@
 		8ABF53C6BDD299D3748C995C8BDE8517 /* Synchronized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Synchronized.swift; path = ReSwift/Utils/Synchronized.swift; sourceTree = "<group>"; };
 		920271C0F4C9735444ACE1F21F8B2795 /* Pods-MemoryGameAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MemoryGameAppTests-Info.plist"; sourceTree = "<group>"; };
 		97774018EED644928A9CD35699571667 /* Pods-MemoryGameApp-MemoryGameAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MemoryGameApp-MemoryGameAppUITests-umbrella.h"; sourceTree = "<group>"; };
-		9B1F4D291014ECD415BABC4F684D37DB /* ReSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReSwift; path = ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1F4D291014ECD415BABC4F684D37DB /* ReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6FA683A1F03749EC050E8319B94218 /* Pods-MemoryGameApp-MemoryGameAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MemoryGameApp-MemoryGameAppUITests.modulemap"; sourceTree = "<group>"; };
 		9CE2E1D07E18F4341F10E69A14EF876B /* Pods-MemoryGameAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MemoryGameAppTests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E068FE49DC27687EB0B94AB51A3E1BA /* Pods-MemoryGameApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MemoryGameApp-dummy.m"; sourceTree = "<group>"; };
 		A078A78F9ACFD2F356B89A3E2456662B /* Pods-MemoryGameAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MemoryGameAppTests"; path = Pods_MemoryGameAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B04B2C9F5BB483027488F2B5EEC0CA /* Reducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reducer.swift; path = ReSwift/CoreTypes/Reducer.swift; sourceTree = "<group>"; };
@@ -241,7 +241,6 @@
 				2356D08D853B46514A118B8C71E5E435 /* TypeHelper.swift */,
 				B7053ABF480A13817ABE7EEED7155E9C /* Support Files */,
 			);
-			name = ReSwift;
 			path = ReSwift;
 			sourceTree = "<group>";
 		};
@@ -287,7 +286,7 @@
 				608399F2A850270962FA0F1C39EE65A9 /* Pods-MemoryGameApp */,
 				2B4C87C5E54A19D11E413984B44A93E1 /* Pods-MemoryGameApp-MemoryGameAppUITests */,
 				A078A78F9ACFD2F356B89A3E2456662B /* Pods-MemoryGameAppTests */,
-				9B1F4D291014ECD415BABC4F684D37DB /* ReSwift */,
+				9B1F4D291014ECD415BABC4F684D37DB /* ReSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,7 +344,7 @@
 			);
 			name = ReSwift;
 			productName = ReSwift;
-			productReference = 9B1F4D291014ECD415BABC4F684D37DB /* ReSwift */;
+			productReference = 9B1F4D291014ECD415BABC4F684D37DB /* ReSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8EF035CF412E65B553068E07D20A1306 /* Pods-MemoryGameApp-MemoryGameAppUITests */ = {
@@ -717,7 +716,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ReSwift/ReSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ReSwift/ReSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -826,7 +825,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ReSwift/ReSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ReSwift/ReSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
