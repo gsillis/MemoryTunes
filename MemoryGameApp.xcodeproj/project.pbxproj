@@ -30,6 +30,8 @@
 		C545C4A12BE55EA000036CEE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A02BE55EA000036CEE /* AppRouter.swift */; };
 		C545C4A32BE5618000036CEE /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A22BE5618000036CEE /* RoutingState.swift */; };
 		C545C4A52BE5634100036CEE /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A42BE5634100036CEE /* RoutingReducer.swift */; };
+		C545C4A72BE90DD900036CEE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */; };
+		C545C4A92BE90DEE00036CEE /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */; };
 		D251B919C3FEFCFE5C5DC156 /* Pods_MemoryGameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D326C7C9DC3C72C2CB9BFE3 /* Pods_MemoryGameApp.framework */; };
 		FB16D389B5D0B50EC1FEF5C8 /* Pods_MemoryGameAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148A55418327CACCDB694C9 /* Pods_MemoryGameAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +88,8 @@
 		C545C4A02BE55EA000036CEE /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		C545C4A22BE5618000036CEE /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
 		C545C4A42BE5634100036CEE /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
+		C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		FA4B795BCC16EE8E76CFAA63 /* Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MemoryGameApp-MemoryGameAppUITests/Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				C51BC7012BE0114400879721 /* GameViewController.swift */,
+				C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */,
+				C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -535,9 +541,11 @@
 				C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */,
 				C51BC6FE2BE0114400879721 /* AppDelegate.swift in Sources */,
 				C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */,
+				C545C4A72BE90DD900036CEE /* MenuTableViewController.swift in Sources */,
 				C51BC7002BE0114400879721 /* SceneDelegate.swift in Sources */,
 				C545C4942BE5073100036CEE /* MemoryGameLogic.swift in Sources */,
 				C51BC7352BE159B600879721 /* CardCollectionViewCell.swift in Sources */,
+				C545C4A92BE90DEE00036CEE /* CategoriesTableViewController.swift in Sources */,
 				C51BC7302BE01E2500879721 /* CollectionViewDataSource.swift in Sources */,
 				C545C4962BE5079800036CEE /* GameState.swift in Sources */,
 			);
