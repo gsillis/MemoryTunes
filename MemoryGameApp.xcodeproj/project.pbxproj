@@ -27,11 +27,12 @@
 		C545C49A2BE518B500036CEE /* MemoryGameLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4992BE518B500036CEE /* MemoryGameLogicTests.swift */; };
 		C545C49C2BE558BE00036CEE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C49B2BE558BE00036CEE /* AppState.swift */; };
 		C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C49D2BE55AF800036CEE /* AppReducer.swift */; };
-		C545C4A12BE55EA000036CEE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A02BE55EA000036CEE /* AppRouter.swift */; };
+		C545C4A12BE55EA000036CEE /* RouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A02BE55EA000036CEE /* RouterDestination.swift */; };
 		C545C4A32BE5618000036CEE /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A22BE5618000036CEE /* RoutingState.swift */; };
 		C545C4A52BE5634100036CEE /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A42BE5634100036CEE /* RoutingReducer.swift */; };
 		C545C4A72BE90DD900036CEE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */; };
 		C545C4A92BE90DEE00036CEE /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */; };
+		C58D09112BE94E63001F0598 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D09102BE94E63001F0598 /* AppRouter.swift */; };
 		D251B919C3FEFCFE5C5DC156 /* Pods_MemoryGameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D326C7C9DC3C72C2CB9BFE3 /* Pods_MemoryGameApp.framework */; };
 		FB16D389B5D0B50EC1FEF5C8 /* Pods_MemoryGameAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148A55418327CACCDB694C9 /* Pods_MemoryGameAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -85,11 +86,12 @@
 		C545C4992BE518B500036CEE /* MemoryGameLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameLogicTests.swift; sourceTree = "<group>"; };
 		C545C49B2BE558BE00036CEE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		C545C49D2BE55AF800036CEE /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		C545C4A02BE55EA000036CEE /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		C545C4A02BE55EA000036CEE /* RouterDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestination.swift; sourceTree = "<group>"; };
 		C545C4A22BE5618000036CEE /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
 		C545C4A42BE5634100036CEE /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
 		C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		C58D09102BE94E63001F0598 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		FA4B795BCC16EE8E76CFAA63 /* Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MemoryGameApp-MemoryGameAppUITests/Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,7 +276,8 @@
 		C545C49F2BE55E8E00036CEE /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				C545C4A02BE55EA000036CEE /* AppRouter.swift */,
+				C545C4A02BE55EA000036CEE /* RouterDestination.swift */,
+				C58D09102BE94E63001F0598 /* AppRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -532,11 +535,12 @@
 			files = (
 				C51BC7382BE15B8100879721 /* ItunesService.swift in Sources */,
 				C545C4A52BE5634100036CEE /* RoutingReducer.swift in Sources */,
+				C58D09112BE94E63001F0598 /* AppRouter.swift in Sources */,
 				C51BC7022BE0114400879721 /* GameViewController.swift in Sources */,
 				C545C4912BE506E000036CEE /* RountingAction.swift in Sources */,
 				C545C4A32BE5618000036CEE /* RoutingState.swift in Sources */,
 				C545C49C2BE558BE00036CEE /* AppState.swift in Sources */,
-				C545C4A12BE55EA000036CEE /* AppRouter.swift in Sources */,
+				C545C4A12BE55EA000036CEE /* RouterDestination.swift in Sources */,
 				C545C48B2BE2DE9E00036CEE /* SearchResult.swift in Sources */,
 				C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */,
 				C51BC6FE2BE0114400879721 /* AppDelegate.swift in Sources */,
