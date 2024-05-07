@@ -9,5 +9,10 @@ import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     let routingReducer = routingReducer(action: action, state: state?.routingState)
-    return AppState(routingState: routingReducer)
+    let menuReducer = menuReducer(action: action, state: state?.menuState)
+    
+    return AppState(
+        routingState: routingReducer,
+        menuState: menuReducer
+    )
 }

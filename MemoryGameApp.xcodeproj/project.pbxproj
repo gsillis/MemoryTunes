@@ -33,6 +33,9 @@
 		C545C4A72BE90DD900036CEE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */; };
 		C545C4A92BE90DEE00036CEE /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */; };
 		C58D09112BE94E63001F0598 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D09102BE94E63001F0598 /* AppRouter.swift */; };
+		C58D09132BEA96C1001F0598 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D09122BEA96C1001F0598 /* MenuState.swift */; };
+		C58D09152BEA977C001F0598 /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D09142BEA977C001F0598 /* MenuReducer.swift */; };
+		C58D09172BEAA30F001F0598 /* MenuTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D09162BEAA30F001F0598 /* MenuTitleTableViewCell.swift */; };
 		D251B919C3FEFCFE5C5DC156 /* Pods_MemoryGameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D326C7C9DC3C72C2CB9BFE3 /* Pods_MemoryGameApp.framework */; };
 		FB16D389B5D0B50EC1FEF5C8 /* Pods_MemoryGameAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148A55418327CACCDB694C9 /* Pods_MemoryGameAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +95,9 @@
 		C545C4A62BE90DD900036CEE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C545C4A82BE90DEE00036CEE /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		C58D09102BE94E63001F0598 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		C58D09122BEA96C1001F0598 /* MenuState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
+		C58D09142BEA977C001F0598 /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
+		C58D09162BEAA30F001F0598 /* MenuTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleTableViewCell.swift; sourceTree = "<group>"; };
 		FA4B795BCC16EE8E76CFAA63 /* Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MemoryGameApp-MemoryGameAppUITests/Pods-MemoryGameApp-MemoryGameAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				C51BC7342BE159B600879721 /* CardCollectionViewCell.swift */,
+				C58D09162BEAA30F001F0598 /* MenuTitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +258,7 @@
 				C545C4932BE5073100036CEE /* MemoryGameLogic.swift */,
 				C545C49D2BE55AF800036CEE /* AppReducer.swift */,
 				C545C4A42BE5634100036CEE /* RoutingReducer.swift */,
+				C58D09142BEA977C001F0598 /* MenuReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 				C545C4952BE5079800036CEE /* GameState.swift */,
 				C545C49B2BE558BE00036CEE /* AppState.swift */,
 				C545C4A22BE5618000036CEE /* RoutingState.swift */,
+				C58D09122BEA96C1001F0598 /* MenuState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -534,9 +543,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51BC7382BE15B8100879721 /* ItunesService.swift in Sources */,
+				C58D09172BEAA30F001F0598 /* MenuTitleTableViewCell.swift in Sources */,
 				C545C4A52BE5634100036CEE /* RoutingReducer.swift in Sources */,
 				C58D09112BE94E63001F0598 /* AppRouter.swift in Sources */,
 				C51BC7022BE0114400879721 /* GameViewController.swift in Sources */,
+				C58D09132BEA96C1001F0598 /* MenuState.swift in Sources */,
 				C545C4912BE506E000036CEE /* RountingAction.swift in Sources */,
 				C545C4A32BE5618000036CEE /* RoutingState.swift in Sources */,
 				C545C49C2BE558BE00036CEE /* AppState.swift in Sources */,
@@ -545,6 +556,7 @@
 				C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */,
 				C51BC6FE2BE0114400879721 /* AppDelegate.swift in Sources */,
 				C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */,
+				C58D09152BEA977C001F0598 /* MenuReducer.swift in Sources */,
 				C545C4A72BE90DD900036CEE /* MenuTableViewController.swift in Sources */,
 				C51BC7002BE0114400879721 /* SceneDelegate.swift in Sources */,
 				C545C4942BE5073100036CEE /* MemoryGameLogic.swift in Sources */,

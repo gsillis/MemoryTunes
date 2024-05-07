@@ -8,6 +8,7 @@ target 'MemoryGameApp' do
   # Pods for MemoryGameApp
 
 	pod 'ReSwift'
+ 	pod 'SnapKit', '~> 5.7.0'
 
   target 'MemoryGameAppTests' do
     inherit! :search_paths

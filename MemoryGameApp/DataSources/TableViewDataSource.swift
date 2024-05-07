@@ -12,13 +12,13 @@ final class TableViewDataSource<V, T>: NSObject, UITableViewDataSource where V: 
     typealias TableViewCellConfiguration = (V, T) -> V
     
     private let models: [T]
-    private let setupCell: TableViewCellConfiguration
     private let cellIdentifier: String
+    private let setupCell: TableViewCellConfiguration
     
-    init(models: [T], setupCell: @escaping TableViewCellConfiguration, cellIdentifier: String) {
+    init(models: [T], cellIdentifier: String, setupCell: @escaping TableViewCellConfiguration) {
         self.models = models
-        self.setupCell = setupCell
         self.cellIdentifier = cellIdentifier
+        self.setupCell = setupCell
     }
     
     
