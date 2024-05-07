@@ -22,11 +22,12 @@ class MenuTableViewController: UITableViewController {
 
 private extension MenuTableViewController {
     func setupNavBar() {
-        navigationController?.title = "Menu"
+        title = "Menu"
+        navigationItem.hidesBackButton = true
     }
     
     func setupView() {
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .lightGray
     }
 }
 

@@ -9,11 +9,13 @@ import ReSwift
 
 final class AppRouter {
     let navController: UINavigationController
+    var viewController = UIViewController()
     
     init(window: UIWindow) {
-        self.navController = UINavigationController()
+        self.navController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navController
         subscribe()
+        setupNavBar()
     }
 }
    
@@ -22,6 +24,10 @@ private extension AppRouter {
         store.subscribe(self) { store in
             store.select { $0.routingState }
         }
+    }
+    
+    func setupNavBar() {
+        navController.navigationItem.setHidesBackButton(true, animated: false)
     }
     
     func pushViewController(viewController: UIViewController, animated: Bool) {
@@ -40,11 +46,14 @@ private extension AppRouter {
     func instantiateViewController(destination: RouterDestination) -> UIViewController {
         switch destination {
         case .menu:
-            return MenuTableViewController()
+            viewController = MenuTableViewController()
+            return viewController
         case .categories:
-            return CategoriesTableViewController()
+            viewController = CategoriesTableViewController()
+            return viewController
         case .game:
-            return GameViewController()
+            viewController = GameViewController()
+            return viewController
         }
     }
 }
