@@ -14,17 +14,32 @@ final class MenuTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavBar()
+        subscribe()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        subscribe()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         unsubscribe()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var routerDestination: RouterDestination = .categories
+        
+        switch indexPath.row {
+        case 0:
+            routerDestination = .game
+        case 1:
+            routerDestination = .categories
+        default:
+            break
+        }
+        
+        store.dispatch(RoutingAction(destination: routerDestination))
     }
 }
 
@@ -35,7 +50,7 @@ private extension MenuTableViewController {
     }
     
     func setupView() {
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .systemMint
         tableView.register(
             MenuTitleTableViewCell.self,
             forCellReuseIdentifier: MenuTitleTableViewCell.identifier
@@ -51,22 +66,27 @@ private extension MenuTableViewController {
     func unsubscribe() {
         store.unsubscribe(self)
     }
-}
-
-extension MenuTableViewController: StoreSubscriber {
-    func newState(state: MenuState) {
+    
+    func setupTableViewCell(with state: MenuState) {
         tableViewDataSource = TableViewDataSource(
             models: state.menuTitles,
             cellIdentifier: MenuTitleTableViewCell.identifier,
             setupCell: { cell, model in
-                var config = cell.defaultContentConfiguration()
-                config.text = model
-                config.textProperties.alignment = .center
+                var content = cell.defaultContentConfiguration()
+                content.text = model
+                content.textProperties.alignment = .center
+                cell.contentConfiguration = content
                 return cell
             }
         )
         tableView.dataSource = tableViewDataSource
         tableView.reloadData()
+    }
+}
+
+extension MenuTableViewController: StoreSubscriber {
+    func newState(state: MenuState) {
+        setupTableViewCell(with: state)
     }
 }
 

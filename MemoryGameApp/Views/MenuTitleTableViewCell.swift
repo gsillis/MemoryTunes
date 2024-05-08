@@ -8,9 +8,6 @@
 import UIKit
 import SnapKit
 
-protocol MenuTitleCellConfiguring {
-    func setup(with title: String)
-}
 
 final class MenuTitleTableViewCell: UITableViewCell {
     static var identifier: String {
@@ -21,12 +18,12 @@ final class MenuTitleTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textAlignment = .center
         label.textColor = .gray
-        label.text = "Test"
         return label
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupView()
         setupContraints()
     }
     
@@ -36,18 +33,16 @@ final class MenuTitleTableViewCell: UITableViewCell {
 }
 
 private extension MenuTitleTableViewCell {
-    func setupContraints() {
+    func setupView() {
         addSubview(titleLabel)
-        
+        backgroundColor = .clear
+        selectionStyle = .none
+    }
+    
+    func setupContraints() {
         titleLabel.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
-    }
-}
-
-extension MenuTitleTableViewCell: MenuTitleCellConfiguring {
-    func setup(with title: String) {
-        titleLabel.text = title
     }
 }
 

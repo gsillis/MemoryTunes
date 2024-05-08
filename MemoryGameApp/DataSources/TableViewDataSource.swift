@@ -32,7 +32,7 @@ final class TableViewDataSource<V, T>: NSObject, UITableViewDataSource where V: 
         guard let currentCell = cell else { return UITableViewCell() }
         
         let model = models[indexPath.row]
-        
+    
         return setupCell(currentCell, model)
     }
 }
