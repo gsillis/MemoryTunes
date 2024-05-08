@@ -20,6 +20,9 @@
 		C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BC7312BE1583000879721 /* TableViewDataSource.swift */; };
 		C51BC7352BE159B600879721 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BC7342BE159B600879721 /* CardCollectionViewCell.swift */; };
 		C51BC7382BE15B8100879721 /* ItunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BC7372BE15B8100879721 /* ItunesService.swift */; };
+		C53306222BEC130900C5BE79 /* CategoriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53306212BEC130900C5BE79 /* CategoriesState.swift */; };
+		C53306242BEC13EF00C5BE79 /* ChangeCategoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53306232BEC13EF00C5BE79 /* ChangeCategoryAction.swift */; };
+		C53306262BEC1B4800C5BE79 /* CategoriesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53306252BEC1B4800C5BE79 /* CategoriesReducer.swift */; };
 		C545C48B2BE2DE9E00036CEE /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C48A2BE2DE9E00036CEE /* SearchResult.swift */; };
 		C545C4912BE506E000036CEE /* RountingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4902BE506E000036CEE /* RountingAction.swift */; };
 		C545C4942BE5073100036CEE /* MemoryGameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545C4932BE5073100036CEE /* MemoryGameLogic.swift */; };
@@ -82,6 +85,9 @@
 		C51BC7312BE1583000879721 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		C51BC7342BE159B600879721 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C51BC7372BE15B8100879721 /* ItunesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesService.swift; sourceTree = "<group>"; };
+		C53306212BEC130900C5BE79 /* CategoriesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesState.swift; sourceTree = "<group>"; };
+		C53306232BEC13EF00C5BE79 /* ChangeCategoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCategoryAction.swift; sourceTree = "<group>"; };
+		C53306252BEC1B4800C5BE79 /* CategoriesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesReducer.swift; sourceTree = "<group>"; };
 		C545C48A2BE2DE9E00036CEE /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		C545C4902BE506E000036CEE /* RountingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RountingAction.swift; sourceTree = "<group>"; };
 		C545C4932BE5073100036CEE /* MemoryGameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameLogic.swift; sourceTree = "<group>"; };
@@ -248,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				C545C4902BE506E000036CEE /* RountingAction.swift */,
+				C53306232BEC13EF00C5BE79 /* ChangeCategoryAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 				C545C49D2BE55AF800036CEE /* AppReducer.swift */,
 				C545C4A42BE5634100036CEE /* RoutingReducer.swift */,
 				C58D09142BEA977C001F0598 /* MenuReducer.swift */,
+				C53306252BEC1B4800C5BE79 /* CategoriesReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				C545C49B2BE558BE00036CEE /* AppState.swift */,
 				C545C4A22BE5618000036CEE /* RoutingState.swift */,
 				C58D09122BEA96C1001F0598 /* MenuState.swift */,
+				C53306212BEC130900C5BE79 /* CategoriesState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -546,13 +555,16 @@
 				C58D09172BEAA30F001F0598 /* MenuTitleTableViewCell.swift in Sources */,
 				C545C4A52BE5634100036CEE /* RoutingReducer.swift in Sources */,
 				C58D09112BE94E63001F0598 /* AppRouter.swift in Sources */,
+				C53306222BEC130900C5BE79 /* CategoriesState.swift in Sources */,
 				C51BC7022BE0114400879721 /* GameViewController.swift in Sources */,
 				C58D09132BEA96C1001F0598 /* MenuState.swift in Sources */,
+				C53306242BEC13EF00C5BE79 /* ChangeCategoryAction.swift in Sources */,
 				C545C4912BE506E000036CEE /* RountingAction.swift in Sources */,
 				C545C4A32BE5618000036CEE /* RoutingState.swift in Sources */,
 				C545C49C2BE558BE00036CEE /* AppState.swift in Sources */,
 				C545C4A12BE55EA000036CEE /* RouterDestination.swift in Sources */,
 				C545C48B2BE2DE9E00036CEE /* SearchResult.swift in Sources */,
+				C53306262BEC1B4800C5BE79 /* CategoriesReducer.swift in Sources */,
 				C51BC7322BE1583000879721 /* TableViewDataSource.swift in Sources */,
 				C51BC6FE2BE0114400879721 /* AppDelegate.swift in Sources */,
 				C545C49E2BE55AF800036CEE /* AppReducer.swift in Sources */,

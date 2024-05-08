@@ -8,4 +8,5 @@
 struct AppState {
     let routingState: RoutingState
     let menuState: MenuState
+    let categoriesState: CategoriesState
 }

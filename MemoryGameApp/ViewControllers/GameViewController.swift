@@ -15,7 +15,7 @@ final class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Game"
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemMint
         let urlString = "https://itunes.apple.com/search?term=pop&entety=music"
 
 //        ItunesService(url: urlString).searchFor()

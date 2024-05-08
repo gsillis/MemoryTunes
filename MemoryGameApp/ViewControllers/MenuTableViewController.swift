@@ -61,6 +61,8 @@ private extension MenuTableViewController {
         store.subscribe(self) { store in
             store.select { $0.menuState }
         }
+        
+        store.dispatch(RoutingAction(destination: .menu))
     }
     
     func unsubscribe() {
